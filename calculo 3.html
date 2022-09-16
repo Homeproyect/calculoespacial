@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculo estelar</title>
+     
+           
+               
+            <style>
+    
+        body {
+        background-image: url( espacio7.jpg) ;
+        background-size: cover;
+        background-repeat:no-repeat ;
+        background-position: center;
+        background-attachment:fixed; 
+        
+        
+    font-weight:bolder;
+user-select: none;
+margin:0;
+width:80% auto;
+background-color:#efc53c;
+
+
+}
+
+p{
+    text-shadow: 3px 3px 5px #55eaff;
+    
+}
+
+h2 {
+text-shadow: 5px 5px 4px #3a9fad;
+text-align:center;
+color:#ffff;
+}
+
+input  {
+box-shadow:inset 4px 3px 2px #aaa ;
+box-shadow:inset -1px;
+padding:10px;
+border-radius:5%;
+text-align:center;
+margin:8px 30px;                    
+}
+.button {
+    color:#999;
+    background-color:#fff;
+    font-weight:bold;
+    margin:20px 80px;
+    box-shadow: -5px -5px 20px #fff, 5px 5px 20px #aaa;
+    border-radius:50%;
+    width:50%;
+    padding:10px;
+    text-align:center;}
+.button:hover{
+    box-shadow:-2px -2px -5px #fff,2px 2px 5px #999;}
+.button:active {
+    box-shadow:inset 1px 5px 20px;}
+    
+    
+
+   
+
+
+    </style>
+</head>
+<body text="#ffffff"><center>
+    
+    <script language=Javascript >
+      
+ 
+        
+        function ejecutar3(){
+        
+        
+        var distanciarecorrer=document.primera.distanciarecorrer.value;
+        
+        
+        
+        var velocidadnave2=document.primera.velocidadnave2.value;
+
+var resultado=(distanciarecorrer/velocidadnave2)
+
+document.primera.result3.value=(resultado/86400);}
+        
+        
+        
+        
+ </script>
+    
+
+<br><h2>Distancias estelares</h2>
+<br>
+<form name=primera >
+    
+ 
+  <p> Ingresa la distancia a recorrer:</p> <br>
+    
+    <input type=text name=distanciarecorrer ><br>
+    
+   <p> Ingresa la velocidad de la nave en k/s:</p> <br>
+    
+    <input type=text name=velocidadnave2 ><br>
+    
+  <p>  La nave tarda en recorrer esa distancia estos dias:</p> <br>
+   <input type=text name=result3 value=""><br>
+   
+    <input type=button onclick=ejecutar3() value=ejecutar >
+  </center>
+  
+    </body>
+    
+</form>
+</html>

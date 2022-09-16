@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculo estelar</title>
+     
+           
+                
+            <style>
+    
+        body {
+        background-image: url( espacio5.jpg) ;
+        background-size: cover;
+        background-repeat:no-repeat ;
+        background-position: center;
+        background-attachment:fixed; 
+        
+        
+    font-weight:bolder;
+user-select: none;
+margin:0;
+width:80% auto;
+background-color:#efc53c;
+
+
+}
+
+p{
+    text-shadow: 3px 3px 5px #2b82ff;
+    
+}
+
+h1 {
+text-shadow: 3px 3px 5px #2b82ff;
+text-align:center;
+color:#ffff;
+}
+input  {
+box-shadow:inset 4px 3px 2px #aaa ;
+box-shadow:inset -1px;
+padding:10px;
+border-radius:5%;
+text-align:center;
+margin:8px 30px;                    
+}
+.button {
+    color:#999;
+    background-color:#fff;
+    font-weight:bold;
+    margin:20px 80px;
+    box-shadow: -5px -5px 20px #fff, 5px 5px 20px #aaa;
+    border-radius:50%;
+    width:50%;
+    padding:10px;
+    text-align:center;}
+.button:hover{
+    box-shadow:-2px -2px -5px #fff,2px 2px 5px #999;}
+.button:active {
+    box-shadow:inset 1px 5px 20px;}
+    
+    
+
+   
+
+
+    </style>
+</head>
+<body text="#ffffff"><center>
+    
+    <script language=Javascript >
+      
+
+        
+        function ejecutar2(){  
+        
+         
+        var añoluza=document.primera.añoluz.value;
+        
+        
+        var velocidadnave=document.primera.velosidadnave.value;
+        
+        
+        var añoluz=31536000*299792.458;
+        
+        document.primera.result2.value=(((añoluza*añoluz)/(60*60*velocidadnave))/24); }
+        
+        
+        
+        
+ </script>
+    
+
+
+<form name=primera >
+    
+    
+    
+    <br>
+    <h1>Recorrer años luz</h1>
+    <br>
+    
+   <p> Ingresa los años luz:</p><br>
+    <input type=text name=añoluz ><br>
+    
+<p>  Ingresa la velosidad de la nave en k/s:</p><br>
+    <input type=text name=velosidadnave >  
+    <br>
+   <p>  Tu nave tarda estos días en recorrer esa distancia:</p> 
+   <br>
+    <input type=text name=result2 value=""><br>
+    
+    <input type=button onclick=ejecutar2() value=ejecutar ><br>
+ 
+  
+    </body>
+    
+</form>
+</html>
